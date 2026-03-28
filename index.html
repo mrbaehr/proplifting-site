@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PropLifting - Identify, Propagate & Grow</title>
+  <meta name="description" content="Snap a photo, identify any plant, and get step-by-step propagation guides. Free on iOS.">
+  <link rel="icon" href="icon-192.png" type="image/png">
+  <style>
+    :root {
+      --green: #2D7D3F;
+      --green-light: #E8F5E9;
+      --dark: #1a1a1a;
+      --muted: #666;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--dark);
+      background: #fafafa;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 28px;
+      box-shadow: 0 8px 30px rgba(45, 125, 63, 0.2);
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin-bottom: 8px;
+    }
+    h1 span { color: var(--green); }
+    .tagline {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 440px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 48px;
+      max-width: 720px;
+    }
+    .feature {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .feature h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .feature p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* CTA */
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+    .btn-primary {
+      background: var(--green);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: #fff;
+      color: var(--green);
+      border: 2px solid var(--green);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer a { color: var(--green); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 36px; }
+      .tagline { font-size: 17px; }
+      .features { flex-direction: column; align-items: center; }
+      .feature { width: 100%; max-width: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="icon-192.png" alt="PropLifting icon" class="icon">
+    <h1>Prop<span>Lifting</span></h1>
+    <p class="tagline">Snap a photo. Identify any plant. Get step-by-step propagation guides tailored to how you grow.</p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">&#x1f4f7;</div>
+        <h3>Instant ID</h3>
+        <p>AI-powered identification from a single photo</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#x1f33f;</div>
+        <h3>Propagation</h3>
+        <p>Step-by-step guides for cuttings, division, and more</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#x1f5fa;</div>
+        <h3>Map Your Finds</h3>
+        <p>Track where you spotted plants on a personal map</p>
+      </div>
+    </div>
+
+    <div class="cta-group">
+      <a href="mailto:beta@proplifting.app?subject=Beta%20signup&body=I%27d%20love%20to%20try%20PropLifting!" class="btn btn-primary">Join the Beta</a>
+      <a href="mailto:hello@proplifting.app?subject=Hello!" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 PropLifting &middot; <a href="mailto:hello@proplifting.app">hello@proplifting.app</a>
+  </div>
+</body>
+</html>
