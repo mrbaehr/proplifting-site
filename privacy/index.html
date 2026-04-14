@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - PropLifting</title>
+  <meta name="description" content="PropLifting privacy policy. Learn how we handle your data.">
+  <link rel="icon" href="../icon-192.png" type="image/png">
+  <style>
+    :root {
+      --green: #2D7D3F;
+      --green-light: #E8F5E9;
+      --dark: #1a1a1a;
+      --muted: #666;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--dark);
+      background: #fafafa;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .back {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      color: var(--green);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .back:hover { text-decoration: underline; }
+
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 80px 24px 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+    h1 span { color: var(--green); }
+    .subtitle {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--green);
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--dark);
+    }
+    p + p { margin-top: 10px; }
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    li { margin-bottom: 6px; }
+    strong { font-weight: 600; }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer a { color: var(--green); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      .card { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="/" class="back">&larr; Back</a>
+
+  <div class="page">
+    <h1>Privacy <span>Policy</span></h1>
+    <p class="subtitle">Effective date: April 13, 2026</p>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <p>PropLifting is a plant identification and propagation app for iOS. We designed it to work offline-first and collect as little data as possible. This policy explains what we do collect, why, and how it's handled.</p>
+    </div>
+
+    <div class="card">
+      <h2>What We Collect</h2>
+
+      <p><strong>Plant photos</strong> &mdash; When you identify a plant, your photo is sent to PlantNet (a plant identification service) to determine the species. Photos are stored locally on your device by default. If you enable cloud backup, they are also stored in Supabase Storage.</p>
+
+      <p><strong>Plant identification data</strong> &mdash; After identification, the species name and context are sent to Anthropic (Claude API) via a Supabase Edge Function to generate care and propagation guides.</p>
+
+      <p><strong>Location (optional)</strong> &mdash; If you grant location permission, coarse GPS coordinates are attached to your plant finds. This data is stored on your device and optionally synced to Supabase if you enable cloud backup.</p>
+
+      <p><strong>Email (optional)</strong> &mdash; If you choose to sign in with Apple, your email address is stored in Supabase for authentication purposes only.</p>
+
+      <p><strong>Usage data</strong> &mdash; We track an anonymous per-user daily count of plant identifications for rate limiting. No personal information is attached to this count.</p>
+
+      <p><strong>Purchase data</strong> &mdash; Subscriptions are handled entirely by Apple and RevenueCat. We receive your subscription status but do not process or store payment information.</p>
+    </div>
+
+    <div class="card">
+      <h2>Third-Party Services</h2>
+      <p>We use the following services to operate PropLifting:</p>
+      <ul>
+        <li><strong>Supabase</strong> &mdash; Database, authentication, file storage, and edge functions for cloud features</li>
+        <li><strong>PlantNet</strong> &mdash; Plant species identification from photos</li>
+        <li><strong>Anthropic (Claude)</strong> &mdash; AI-generated care and propagation guides</li>
+        <li><strong>RevenueCat</strong> &mdash; Subscription management and status</li>
+        <li><strong>Apple</strong> &mdash; Sign in with Apple authentication and In-App Purchase processing</li>
+      </ul>
+      <p>Each service processes data in accordance with their own privacy policies. We only share the minimum data required for each service to function.</p>
+    </div>
+
+    <div class="card">
+      <h2>Data Storage &amp; Retention</h2>
+      <p>Your plant data and photos are stored on your device and kept as long as you want them. If you enable cloud backup, a copy is also stored in Supabase.</p>
+      <p>You can delete individual plants or your entire account at any time. When you delete your account, all associated data is removed from our servers.</p>
+    </div>
+
+    <div class="card">
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> your data &mdash; request a copy of what we have</li>
+        <li><strong>Delete</strong> your data &mdash; request full removal of your account and associated data</li>
+        <li><strong>Portability</strong> &mdash; your local data is always on your device and accessible to you</li>
+      </ul>
+      <p>To exercise any of these rights, email <a href="mailto:support@proplifting.app">support@proplifting.app</a>.</p>
+      <p>If you are in the European Economic Area, you also have the right to lodge a complaint with your local data protection authority.</p>
+    </div>
+
+    <div class="card">
+      <h2>Children's Privacy</h2>
+      <p>PropLifting is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+    </div>
+
+    <div class="card">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. If we make significant changes, we will notify you through the app or by email. The effective date at the top of this page will always reflect the latest version.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Questions or concerns? Reach us at <a href="mailto:support@proplifting.app">support@proplifting.app</a> or visit our <a href="/support">support page</a>.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 PropLifting &middot; <a href="mailto:support@proplifting.app">support@proplifting.app</a> &middot; <a href="/support">Support</a>
+  </div>
+</body>
+</html>
